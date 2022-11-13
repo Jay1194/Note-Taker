@@ -10,8 +10,8 @@ router.get("/notes",(req, res) => {
 });
 
 //router.post
-router.post("/notes",(req, res) => {
-    fs.readFile(path.join(__dirname,"./db/db.json"),"utf8",(err, data) => {
+ router.post("/notes",(req, res) => {
+     fs.readFile(path.join(__dirname,"./db/db.json"),"utf8",(err, data) => {
     if (err) {
     console.error(err);
     return;
