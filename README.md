@@ -35,5 +35,5 @@ https://courses.bootcampspot.com/courses/1490/files/1676054/preview
 
 GitHub - https://github.com/Jay1194/Note-Taker
 
-Deployed URL - 
+Deployed URL - https://jaydent-note-taker.herokuapp.com/notes.html
 
