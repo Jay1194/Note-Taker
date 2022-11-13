@@ -21,11 +21,11 @@ router.get("/notes",(req, res) => {
 
     }
     req.body.id = uuid();
-    note.push(req.body);
-    var note = JSON.parse(data);
+    notes.push(req.body);
+    var notes = JSON.parse(data);
 
     fs.writeFile(path.join(__dirname,"./db/db.json"),
-        JSON.stringify(note),(err) => {
+        JSON.stringify(notes),(err) => {
             if (err) throw err;
                 res.json(req.body);
             }
