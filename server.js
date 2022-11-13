@@ -8,7 +8,7 @@ const apiRoutes = require("./routes/apiRoutes");
 
 
 //intialize express
-const PORT = process.env.PORT || 4347;
+const PORT = process.env.PORT || 7099;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));

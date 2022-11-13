@@ -6,8 +6,11 @@ const fs = require('fs');
 
 //router.get
 router.get("/notes",(req, res) => {
-    res.json(Data);
+   let text = "./db/db.json"
+   res.json(text || []);
 });
+
+
 
 //router.post
  router.post("/notes",(req, res) => {
@@ -15,6 +18,7 @@ router.get("/notes",(req, res) => {
     if (err) {
     console.error(err);
     return;
+
     }
     req.body.id = uuid();
     note.push(req.body);
